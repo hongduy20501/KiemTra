@@ -16,5 +16,14 @@
     <div>
       <button id="btnLogin">Đăng nhập</button>
     </div>
+    <script>
+      document.querySelector('#btnLogin').addEventListener('click', () => {
+        const username = document.querySelector('#txtUsername').value;
+        const password = document.querySelector('#txtPassword').value;
+        if (username === 'admin' && password === 'admin') {
+          location.href = 'success.html';
+        }
+      });
+    </script>
   </body>
 </html>
